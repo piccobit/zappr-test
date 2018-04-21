@@ -22,12 +22,23 @@ commit:
       - "^#[0-9]+" # has to begin with hash # and at least one number
         # OR
       - "^💩💩💩$" # be three piles of poo
-autobranch:
-  # things in curly brackets are variables that
-  # will be replaced. possible variables:
-  # - number: the issue number
-  # - title: the issue title
-  # - labels: the labels of the issue at opening time
-  pattern: "{number}-{title}"
-  # restrict branch name to maximum this many characters
-  length: 60
+specification:
+    # title requirements AND body AND template requirements have to match
+    title:
+        # PR title is at least this many characters long
+        minimum-length:
+            enabled: true
+            length: 8
+    body:
+        # either of these verifications has to be true
+        # PR body is at least this many characters long
+        minimum-length:
+            enabled: true
+            length: 8
+        # contains a link
+        contains-url: false
+        # contains an issue number
+        contains-issue-number: false
+        template:
+            # is different from pull request body
+            differs-from-body: true
