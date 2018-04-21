@@ -1,6 +1,6 @@
 approvals:
   # PR needs at least 2 approvals
-  minimum: 2
+  minimum: 1
   # approval = comment that matches this regex
   pattern: "^(:\\+1:|👍)$"
   veto:
@@ -19,9 +19,7 @@ commit:
   message:
     # note that there are no default patterns for commit messages
     patterns:
-      - "^#[0-9]+" # has to begin with hash # and at least one number
-        # OR
-      - "^💩💩💩$" # be three piles of poo
+        - "^[A-Z]+-[0-9]+" # starts with uppercase letters, a dash and digits
 specification:
     # title requirements AND body AND template requirements have to match
     title:
