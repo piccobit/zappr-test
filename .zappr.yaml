@@ -5,7 +5,7 @@ approvals:
   pattern: "^(Code|Design|Test) ?\\+\\d$"
   veto:
     # veto/blocking a PR = comment that matches this regex
-    pattern: "^(Code|Design|Test) ?\\-1$"
+    pattern: "^(Code|Design|Test) ?\\-\\d$"
   # note that `from` is by default empty,
   # accepting any matching comment as approval
   from:
