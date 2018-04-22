@@ -17,7 +17,7 @@ approvals:
     users:
       - hdstich
       - piccobit
-
+      - cloudbaseone
 commit:
   message:
     # note that there are no default patterns for commit messages
