@@ -3,7 +3,7 @@ approvals:
   minimum: 1
   ignore: none
   # approval = comment that matches this regex
-  pattern: "^(Code|Design|Test) ?\\+(1|2|3)"
+  # pattern: "^(Code|Design|Test) ?\\+(1|2|3)"
   veto:
     # veto/blocking a PR = comment that matches this regex
     pattern: "^(Code|Design|Test) ?-(1|2|3)"
@@ -12,7 +12,7 @@ approvals:
   from:
     # commenter must be either one of:
     # OR a collaborator of the repo
-    collaborators: true
+    # collaborators: true
     # OR one of these guys
     users:
       - hdstich
