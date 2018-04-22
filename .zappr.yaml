@@ -15,8 +15,9 @@ approvals:
     collaborators: true
     # OR one of these guys
     users:
-      - piccobit
       - hdstich
+Xx
+
 commit:
   message:
     # note that there are no default patterns for commit messages
