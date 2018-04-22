@@ -1,5 +1,5 @@
 approvals:
-  # PR needs at least 2 approvals
+  # PR needs at least 1 approvals
   minimum: 1
   # approval = comment that matches this regex
   pattern: "^Code:+1$"
