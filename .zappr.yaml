@@ -2,10 +2,12 @@ approvals:
   # PR needs at least 2 approvals
   minimum: 1
   # approval = comment that matches this regex
-  pattern: "^(:\\+1:|👍)$"
+  pattern: "^Code:+1$"
+  pattern: "^Code:+2$"
+  pattern: "^Code:+3$"
   veto:
     # veto/blocking a PR = comment that matches this regex
-    pattern: "^(:\\-1:|👎)$"
+    pattern: "^Code:-1$"
   # note that `from` is by default empty,
   # accepting any matching comment as approval
   from:
