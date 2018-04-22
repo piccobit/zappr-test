@@ -16,7 +16,7 @@ approvals:
     # OR one of these guys
     users:
       - hdstich
-
+      - piccobit
 
 commit:
   message:
