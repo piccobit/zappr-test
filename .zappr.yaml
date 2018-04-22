@@ -3,10 +3,10 @@ approvals:
   minimum: 1
   ignore: pr_opener
   # approval = comment that matches this regex
-  pattern: "^(Code|Design|Test) ?\\+(1|2|3)"
-  veto:
+  # pattern: "^(Code|Design|Test) ?\\+(1|2|3)"
+  # veto:
     # veto/blocking a PR = comment that matches this regex
-    pattern: "^(Code|Design|Test) ?-(1|2|3)"
+    # pattern: "^(Code|Design|Test) ?-(1|2|3)"
   # note that `from` is by default empty,
   # accepting any matching comment as approval
   from:
