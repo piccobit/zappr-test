@@ -3,8 +3,8 @@ approvals:
   minimum: 1
   ignore: none
   # approval = comment that matches this regex
-  # pattern: "^(Code|Design|Test) ?\\+(1|2|3)"
-  pattern: "Code ok"
+  pattern: "^(Code|Design|Test) ?\\+(1|2|3)"
+
   veto:
     # veto/blocking a PR = comment that matches this regex
     pattern: "^(Code|Design|Test) ?-(1|2|3)"
